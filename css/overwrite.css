@@ -1,0 +1,779 @@
+.horizontal-line {
+    width: 100%;
+    border: 3px solid #ccc; /* Light gray border */
+    margin: 20px 3;
+}
+.education-section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  .school-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    
+  }
+  .horizontal-line {
+    width: 100%;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+  }
+  .degree-info, .gpa {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+  }
+  .date-location {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 10px;
+    text-align: center;
+
+  }
+  .gpa {
+    font-weight: bold;
+    color: #3b7dd8;
+  }
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;  /* Center the text */
+    margin-top: 20px;
+  }
+  
+  /* Style for the skills list */
+  .skills-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Style for each list item */
+  .skills-list li {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligns the text to the left while keeping the bullet in place */
+    text-align: left; /* Ensures wrapped text is aligned correctly */
+    width: 90%; /* This ensures the text stays within the boundaries of the list and wraps properly */
+    max-width: 600px;  /* Vertically center the content */
+  }
+  
+  /* Custom bullet style */
+  .skills-list li::before {
+    content: "• ";
+    color: #3b7dd8;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    line-height: 1.5rem;  /* Ensure the bullets align vertically */
+  }
+  
+  /* Style for the paragraph (everything after Proficient in Excel) */
+  .skills-paragraph {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+    max-width: 600px;  /* Optional: Add a max-width to prevent the paragraph from stretching too far */
+    line-height: 1.5;
+  }
+  
+  /* Grey box around content */
+  .grey-box {
+    border: 2px solid #ccc; /* Light grey border */
+    background-color: #f9f9f9; /* Light grey background */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+
+  }
+
+  .experience-section {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .experience-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .horizontal-line {
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+  }
+  
+  /* Each Job Item Styling */
+  .experience-item {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .job-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .job-title h3 {
+    font-size: 1.5rem;
+    margin: 5px 0;
+  }
+  
+  .job-title .company {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .job-title .date-location {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .job-description {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .job-description li {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligns the text to the left while keeping the bullet in place */
+    text-align: left; /* Ensures wrapped text is aligned correctly */
+    width: 90%; /* This ensures the text stays within the boundaries of the list and wraps properly */
+    max-width: 600px; /* Center both the bullet and text */
+  }
+  
+  .job-description li::before {
+    content: "• ";
+    color: #3b7dd8;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    line-height: 1.5rem;
+  }
+ /* Leadership and Service Section Styling */
+.leadership-service-section {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .leadership-service-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .horizontal-line {
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+  }
+  
+  /* Leadership and Service Item Styling */
+  .leadership-service-item {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .leadership-job-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .leadership-job-title h3 {
+    font-size: 1.5rem;
+    margin: 5px 0;
+  }
+  
+  .leadership-job-title .company {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .leadership-job-title .date-location {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .leadership-job-description {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .leadership-job-description li {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligns the text to the left while keeping the bullet in place */
+    text-align: left; /* Ensures wrapped text is aligned correctly */
+    width: 90%; /* This ensures the text stays within the boundaries of the list and wraps properly */
+    max-width: 600px; /* Limits the width for readability */
+  }
+  
+  .leadership-job-description li::before {
+    content: "• ";
+    color: #3b7dd8;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    line-height: 1.5rem;
+  }
+  .about-me-section {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  
+
+  
+  .about-me-section h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin: 10px 0;
+    color: white; /* Softer color for the subheader */
+  }
+  
+  .ecm-body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Hero Section Container */
+  .ecm-hero-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Background Image */
+  .ecm-hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../assets/img/pexels-yuliantopoitier-1231365.jpg) no-repeat center center/cover;
+    z-index: 1;
+  }
+  
+  /* Transparent Grey Overlay */
+  .ecm-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent grey (adjust the 0.4 for transparency level) */
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s ease-out;
+  }
+  
+  /* Content Styling */
+  .ecm-content {
+    text-align: center;
+    color: white;
+    z-index: 3;
+    padding: 0 20px;
+  }
+  
+  .ecm-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  }
+  
+  .ecm-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .ecm-btn {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Main Content after the Hero Section */
+  .ecm-main-content {
+    padding: 20px;
+    background-color: white;
+    height: 0px; /* Ensures the page is scrollable */
+  }
+  .why-child-safety {
+    background-color: #f9f9f9; /* Light grey background */
+    padding: 50px 20px; /* Padding around the section */
+    text-align: center; /* Center text */
+  }
+  
+  .why-child-safety .container {
+    max-width: 900px; /* Limit the width */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .why-child-safety .section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333; /* Dark text for readability */
+    margin-bottom: 20px;
+  }
+  
+  .why-child-safety .section-description {
+    font-size: 1.125rem;
+    color: #555; /* Lighter grey for description */
+    line-height: 1.6; /* Line spacing for better readability */
+    margin-bottom: 20px; /* Adjusted margin */
+    padding: 0 10px; /* Padding inside paragraphs for better spacing */
+  }
+  
+  .why-child-safety .website-purpose {
+    font-size: 1.25rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 30px; /* Space between purpose text and icons */
+  }
+  
+  /* Motives Section */
+  .motives-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .motive {
+    text-align: center;
+    max-width: 150px; /* Prevents items from becoming too wide */
+  }
+  
+  .motive-icon {
+    background-color: #f4b400; /* Bright yellow for the circle */
+    color: #fff; /* White icon color */
+    border-radius: 50%;
+    display: inline-flex; /* Use inline-flex to better control alignment */
+    align-items: center; /* Vertically center the icon */
+    justify-content: center; /* Horizontally center the icon */
+    width: 80px; /* Set a fixed width */
+    height: 80px; /* Set a fixed height equal to width */
+    font-size: 2rem; /* Icon size */
+    margin-bottom: 10px;
+  }
+  
+  .motive-text {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+  
+  /* Optional: Hover effect for the motive icons */
+  .motive-icon:hover {
+    background-color: #ff9800; /* Slightly darker yellow on hover */
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+  }
+  .child-mortality-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 30px;
+}
+
+/* Description Styling */
+.child-mortality-description {
+    padding: 25px;
+    background-color: #f1f8ff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Title and Section Styling */
+.child-mortality-description h2 {
+    color: #003366; /* Dark Blue */
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+}
+
+.child-mortality-description h3 {
+    color: #0066cc; /* Blue */
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.child-mortality-description p {
+    color: #444;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.child-mortality-description ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.child-mortality-description ul li {
+    color: #555;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.child-mortality-description ul li strong {
+    color: #003366; /* Dark Blue */
+}
+
+.child-mortality-description ul li span {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/* Adding icons next to the titles and items */
+.icon {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.icon-safety {
+    color: #ffcc00; /* Yellow */
+}
+
+.icon-injury {
+    color: #ff6600; /* Orange */
+}
+
+.icon-drowning {
+    color: #0099cc; /* Blue */
+}
+
+.icon-car {
+    color: #ff3366; /* Red */
+}
+
+.icon-fall {
+    color: #66cc33; /* Green */
+}
+
+.icon-suffocation {
+    color: #ff9933; /* Light Orange */
+}
+
+.icon-heart {
+    color: #ff3366; /* Red */
+}
+
+/* Add a little space at the top of the container */
+.child-mortality-description {
+    margin-top: 30px;
+}
+.custom-light-blue-bg {
+    background-color: #cce0ff; /* Light blue background */
+    color: #003366;  /* Dark blue text for contrast */
+    padding-top: 40px;
+    padding-bottom: 40;
+    border-radius: 8px;
+}
+
+/* Container to hold content */
+.safety-habits-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Title Styling */
+.custom-light-blue-bg h2 {
+    font-size: 2.5rem;  /* Larger heading */
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #003366;  /* Dark blue title to maintain contrast */
+}
+
+/* Text Styling */
+.custom-light-blue-bg p {
+    font-size: 1.125rem;  /* Slightly larger text */
+    line-height: 1.8;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #003366; /* Dark blue text for consistency */
+}
+
+/* Individual Habit Block */
+.safety-habit {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;  /* More space between each habit section */
+    flex-wrap: wrap;
+    background-color: #ffffff;  /* White background for each habit */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Soft shadow around each block */
+    
+}
+
+/* Text Section */
+.safety-habit-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.safety-habit-text h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #003366;  /* Dark blue for the titles */
+    margin-bottom: 15px;
+}
+
+.safety-habit-text p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Image Section */
+.safety-habit-image {
+    flex: 0 0 200px;
+    margin-left: 20px;
+    border-radius: 8px;
+}
+
+.safety-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Soft shadow around images */
+}
+
+/* Ensure responsive behavior on smaller screens */
+@media (max-width: 768px) {
+    .safety-habit {
+        flex-direction: column; /* Stack text and image on small screens */
+        align-items: center;
+        padding: 15px;  /* Smaller padding on mobile */
+    }
+
+    .safety-habit-image {
+        margin-left: 0;
+        margin-top: 20px; /* Add space between text and image */
+    }
+
+    .safety-habit-text {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .safety-habit-text h3 {
+        font-size: 1.5rem; /* Smaller titles for mobile */
+    }
+
+    .safety-habit-text p {
+        font-size: 1rem; /* Adjust font size for mobile */
+    }
+}
+.child-safety-intro .intro-section {
+    background-image: url(assets/img/happymom.jpg); /* Set the path to your image */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-color: #f1f8ff; /* Soft, light blue for a fresh, calm feel */
+    color: #003366; /* Dark blue for professional and readable text */
+    padding: 80px 40px; /* More padding for spacious design */
+    border-radius: 15px;
+    margin-bottom: 50px; /* Increase space between sections */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    text-align: center; /* Centering text */
+    margin-top: 50px; /* Space at the top of the section */
+}
+
+/* Heading Styling for Intro - Light, Modern Feel */
+.child-safety-intro .intro-section h3 {
+    font-size: 2.5rem;  /* Large and modern heading */
+    font-weight: 700;
+    color: #005b96;  /* Soft but prominent blue */
+    margin-bottom: 25px;
+    font-family: 'Helvetica Neue', sans-serif; /* Clean font for modern look */
+    line-height: 1.3;
+}
+
+/* Paragraph Styling for Intro - Clean, Easy-to-Read */
+.child-safety-intro .intro-section p {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: #003366; /* Dark blue text for clarity */
+    font-family: 'Helvetica Neue', sans-serif; /* Keeping font clean and modern */
+    max-width: 800px;  /* Restrict width to make it more readable */
+    margin: 0 auto;  /* Center text within the section */
+    font-style: italic; /* Light italic for sophistication */
+    padding: 0 15px;
+}
+
+
+.child-safety-closing .closing-section {
+    background-color: #f1f8ff; /* Matching soft, light blue background */
+    color: #003366; /* Dark blue for text clarity and professionalism */
+    padding: 60px 40px; /* Balanced padding for spaciousness */
+    border-radius: 15px;
+    margin-top: 50px; /* Add space before closing section */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    text-align: center; /* Centering the text for a modern feel */
+}
+
+/* Heading Styling for Closing - Consistent with the Intro */
+.child-safety-closing .closing-section h3 {
+    font-size: 2.5rem;  /* Same font size for consistency */
+    font-weight: 700;
+    color: #005b96;  /* Soft but noticeable blue */
+    margin-bottom: 25px;
+    font-family: 'Helvetica Neue', sans-serif; /* Consistent modern font */
+    line-height: 1.3;
+}
+
+/* Paragraph Styling for Closing - Elegant and Readable */
+.child-safety-closing .closing-section p {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: #003366; /* Dark blue text for readability */
+    font-family: 'Helvetica Neue', sans-serif; /* Maintaining modern font */
+    max-width: 800px;  /* Restricting width for readability */
+    margin: 0 auto;  /* Centering text */
+    font-style: italic; /* Italic for a sophisticated touch */
+    padding: 0 15px;
+}
+.child-safety-section-wrapper {
+    background-color: #f1f8ff; /* Soft, light blue background */
+    padding: 80px 0;
+}
+.section-starter {
+    width: 100%;
+    height: 10px; /* Adjust the thickness of the line */
+    background-color: black; /* Set color to black */
+}
+.section-thicker-line {
+    width: 100%;
+    height: 30px; /* Thickness of the second line */
+    /* The bg-primary class will apply the primary color to this line */
+    margin-bottom: 30px; /* Space between the lines and the section */
+}
+.intro-image {
+    max-width: 900px; /* Set a max width */
+    height: auto; /* Ensure the aspect ratio is maintained */
+    border-radius: 8px; /* Rounded corners for the image */
+    border: black solid 5px;
+}
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+.about-formatting{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.about-formatting h1{
+  text-align: center;
+}
+  
+.center-image2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  margin: -50px auto 0; /* Adjust the negative margin to overlap the red */
+  position: relative;
+  z-index: 1; /* Bring the image above the red background */
+
+}
+
+.about-me-container {
+  background-color: maroon;
+    padding: 60px; /* Add padding to give space around the content */
+    border-radius: 5px; /* Optional: Round the corners */
+    color: white; /* Optional: Change text color for contrast */
+    text-align: center; /* Optional: Center-align the text */
+}
+.tableauPlaceholder{
+  display: flex;  
+  height: 50px;
+  width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 40px;
+}
+.background-color{
+  background-color: #77777768;
+}
+.icon-end-container {
+  display: flex;
+  justify-content: center; /* Horizontally center the icons */
+  align-items: center;    /* Vertically align the icons */
+  gap: 20px;              /* Space between the icons */
+  margin: 50px 0;         /* Add some space above and below */
+}
+
+.icon-end {
+  width: 100px;          /* Circle width */
+  height: 100px;         /* Circle height */
+  border-radius: 50%;    /* Makes it a circle */
+  background-color: maroon; /* Icon background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none; /* Remove underline for links */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.icon-end:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
